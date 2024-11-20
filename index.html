@@ -3,9 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="container">
+            <div class="sidenav">
+                <h1 class="title">Orarul Cursurilor</h1>
+                <div class="buttons">
+                    <button class="button button-active">Grupe</button>
+                    <button class="button">Profesori</button>
+                    <button class="button">Aule</button>
+                </div>
+                <div class="modifier">
+                    <span class="modifier-title">Regim pentru student</span>
+                    <div class="modifier-slider"></div>
+                </div>
+                <div class="search">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-icon"><circle fill="none" stroke="#25975A" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#25975A" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg>
+                    <input class="search-input" type="text" value="IS21R">
+                    <svg class="search-cross" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close"><path fill="none" stroke="#f0506e" stroke-width="1.06" d="M16,16 L4,4"></path><path fill="none" stroke="#f0506e" stroke-width="1.06" d="M16,4 L4,16"></path></svg>
+                </div>
+                <div class="group-list">
+                    <div class="group-item">IS21R</div>
+                </div>
+                <select class="day-picker">
+                    <option class="day-option" value="day">Ziua</option>
+                    <option class="day-option" value="m">Luni</option>
+                    <option class="day-option" value="th">Marti</option>
+                    <option class="day-option" value="w">Miercuri</option>
+                    <option class="day-option" value="t">Joi</option>
+                    <option class="day-option" value="f">Vineri</option>
+                    <option class="day-option" value="su">Sambata</option>
+                    <option class="day-option" value="st">Duminica</option>
+                </select>
+                <select class="date-picker">
+                    <option class="date-picker-option" value="-1">Săptămîna</option>
+                    <option class="date-picker-option" value="1">1 (2.9.2024 - 8.9.2024)</option>
+                    <option class="date-picker-option" value="2">2 (9.9.2024 - 15.9.2024)</option>
+                    <option class="date-picker-option" value="3">3 (16.9.2024 - 22.9.2024)</option>
+                    <option class="date-picker-option" value="4">4 (23.9.2024 - 29.9.2024)</option>
+                    <option class="date-picker-option" value="5">5 (30.9.2024 - 6.10.2024)</option>
+                    <option class="date-picker-option" value="6">6 (7.10.2024 - 13.10.2024)</option>
+                    <option class="date-picker-option" value="7">7 (14.10.2024 - 20.10.2024)</option>
+                    <option class="date-picker-option" value="8">8 (21.10.2024 - 27.10.2024)</option>
+                    <option class="date-picker-option" value="9">9 (28.10.2024 - 3.11.2024)</option>
+                    <option class="date-picker-option" value="10"">10 (4.11.2024 - 10.11.2024)</option>
+                    <option class="date-picker-option" value="11"">11 (11.11.2024 - 17.11.2024)</option>
+                    <option class="date-picker-option" selected="selected" value="12">12 (18.11.2024 - 24.11.2024)</option>
+                    <option class="date-picker-option" value="13">13 (25.11.2024 - 1.12.2024)</option>
+                    <option class="date-picker-option" value="14">14 (2.12.2024 - 8.12.2024)</option>
+                    <option class="date-picker-option" value="15">15 (9.12.2024 - 15.12.2024)</option>
+                    <option class="date-picker-option" value="16">16 (16.12.2024 - 22.12.2024)</option>
+                    <option class="date-picker-option" value="17">17 (23.12.2024 - 29.12.2024)</option>
+                    <option class="date-picker-option" value="18">18 (30.12.2024 - 5.1.2025)</option>
+                    <option class="date-picker-option" value="19">19 (6.1.2025 - 12.1.2025)</option>
+                    <option class="date-picker-option" value="20">20 (13.1.2025 - 19.1.2025)</option>
+                    <option class="date-picker-option" value="21">21 (20.1.2025 - 26.1.2025)</option>
+                    <option class="date-picker-option" value="22">22 (27.1.2025 - 2.2.2025)</option>
+                </select>
+                <div class="table">
+                    <div class="table-element table-element-green"></div>
+                    <div class="table-element table-element-green">1</div>
+                    <div class="table-element table-element-green">2</div>
+                    <div class="table-element table-element-green">3</div>
+                    <div class="table-element table-element-green">4</div>
+                    <div class="table-element table-element-green">5</div>
+                    <div class="table-element table-element-green">6</div>
+                    <div class="table-element table-element-green">7</div>
+                    <div class="table-element table-element-green">L - 18</div>
+                    <div class="table-element green">L</div>
+                    <div class="table-element green">L</div>
+                    <div class="table-element"></div>
+                    <div class="table-element pink">EP</div>
+                    <div class="table-element pink">S</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element table-element-green">Ma - 19</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element green">P</div>
+                    <div class="table-element green">L</div>
+                    <div class="table-element pink">L</div>
+                    <div class="table-element pink">L</div>
+                    <div class="table-element"></div>
+                    <div class="table-element table-element-green">Mi - 20</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element">L</div>
+                    <div class="table-element">EP</div>
+                    <div class="table-element">L</div>
+                    <div class="table-element">S</div>
+                    <div class="table-element"></div>
+                    <div class="table-element table-element-green">J - 21</div>
+                    <div class="table-element">R</div>
+                    <div class="table-element"></div>
+                    <div class="table-element">R</div>
+                    <div class="table-element">S</div>
+                    <div class="table-element">L</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element table-element-green">V - 22</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element">L</div>
+                    <div class="table-element">EP</div>
+                    <div class="table-element">S</div>
+                    <div class="table-element">R</div>
+                    <div class="table-element table-element-green">S - 23</div>
+                    <div class="table-element">EP</div>
+                    <div class="table-element">L</div>
+                    <div class="table-element">S</div>
+                    <div class="table-element">S</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element table-element-green">D - 24</div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                    <div class="table-element"></div>
+                </div>
+                <div class="legend">
+                    <div class="legend-item">P - Prelegere</div>
+                    <div class="legend-item">S - Seminar</div>
+                    <div class="legend-item">L - Laborator</div>
+                    <div class="legend-item">PC - Proiect de Curs</div>
+                    <div class="legend-item">EP - Evaluare periodică</div>
+                    <div class="legend-item">C - Consultație</div>
+                    <div class="legend-item">E - Examinare</div>
+                    <div class="legend-item">R - Reexaminare</div>
+                    <div class="legend-item">SP - Seminar prealabil</div>
+                    <div class="legend-item">ST - Seminar de totalizare</div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-button">Descarca orar</button>
+                    <button class="action-button">Examene</button>
+                    <button class="action-button">Planificare</button>
+                </div>
+                <div class="info">Serviciul este inactiv între ore 23:00 și 3:00</div>
+            </div>
+            <section class="main">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <h1 class="main-title">UNIVERSITATEA DE STAT „ALECU RUSSO” DIN BĂLȚI</h1>
+                <div class="main-table">
+                    <div class="main-table-element">8:00 <br> 9:30</div>
+                    <div class="main-table-element">9:45 <br> 11:15</div>
+                    <div class="main-table-element">11:30 <br> 13:00</div>
+                    <div class="main-table-element">13:15 <br> 14:45</div>
+                    <div class="main-table-element">15:00 <br> 16:30</div>
+                    <div class="main-table-element">16:45 <br> 18:15</div>
+                    <div class="main-table-element">18:30 <br> 20:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
